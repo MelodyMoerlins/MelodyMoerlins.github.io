@@ -1,0 +1,111 @@
+body{
+    background-color: rgb(100, 58, 139);
+    margin: 0px;
+    padding: 0px;
+}
+
+#navbar{
+position: sticky;
+top: 0;
+background-color: rgb(200, 179, 219);
+padding: 10px;
+text-align: center;
+margin-bottom: 0px;
+}
+
+.navbaritems{
+    text-decoration: none;
+    margin-inline: 2%;
+    font-size: 35px;
+    margin-bottom: 0px;
+    color: rgb(74, 46, 99);
+}
+
+p{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-size: 35px;
+    color: rgb(195, 176, 212);
+}
+
+header{
+    background-color: rgb(157, 117, 192);
+    margin: 0px;
+    padding: 0px;
+}
+
+h1{
+    margin: 0;
+    height: 150px;
+    text-align: center;
+    font-size: 80px;
+    color: rgb(236, 223, 245);
+}
+
+h2{
+    font-size:40px;
+    text-align: center;
+    color: rgb(225, 211, 238);
+    margin-inline: 8%;
+}
+
+#margins{
+    margin-inline: 8%;
+    text-align: center;
+}
+
+.certifications{
+    color: rgb(236, 223, 245);
+    font-size: 20px;
+}
+
+li{
+    text-align: left;
+    color: rgb(195, 176, 212);
+    font-size:30px;
+    list-style-type:symbols();
+}
+
+ul {
+  list-style: none;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+ul li::before {
+  content: "♡";
+  margin-right: 0.5em;
+}
+
+h3{
+    font-size:30px;
+    text-align: center;
+    color: rgb(214, 200, 226);
+    padding: 0;
+    margin: 0;
+    margin-inline: 8%;
+    padding-top: 15px;
+}
+
+html{scroll-padding-top: 70px;}
+
+.contact{
+    color: rgb(202, 176, 223);
+}
+
+hr{
+    margin-inline: 30%;
+    color: aliceblue;
+}
+
+#hangmanid{
+    
+    text-align: center;
+    color: rgb(195, 176, 212);
+    font-size:30px;
+    list-style-type:symbols();
+    border:solid thin;
+    padding: 15px;
+    border-radius: 15px;
+}
