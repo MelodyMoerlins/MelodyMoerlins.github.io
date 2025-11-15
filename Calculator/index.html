@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#f06292">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="calculator">
+        <div id="clear">
+            <button id="clearbutton" onclick="clearanswer()">Clear</button>
+        </div>
+        <div id="answer">
+            <p id="answer_number"></p>
+        </div>
+        <div id="buttons">
+            <button class="button" id="one" onclick= "updatedisplay(1)">1</button>
+            <button class="button" id="two" onclick= "updatedisplay(2)">2</button>
+            <button class="button" id="three" onclick= "updatedisplay(3)">3</button>
+            <button class="button" id="plus" onclick= "updatedisplay('+')">+</button>
+            <button class="button" id="four" onclick= "updatedisplay(4)">4</button>
+            <button class="button" id="five" onclick= "updatedisplay(5)">5</button>
+            <button class="button" id="six" onclick= "updatedisplay(6)">6</button>
+            <button class="button" id="minus" onclick= "updatedisplay('-')">-</button>
+            <button class="button" id="seven" onclick= "updatedisplay(7)">7</button>
+            <button class="button" id="eight" onclick= "updatedisplay(8)">8</button>
+            <button class="button" id="nine" onclick= "updatedisplay(9)">9</button>
+            <button class="button" id="enter_button" onclick="enter()">Enter</button>
+            <button class="button" id="times" onclick= "updatedisplay('*')">x</button>
+            <button class="button" id="zero" onclick= "updatedisplay(0)">0</button>
+            <button class="button" id="divide" onclick= "updatedisplay('/')">/</button>
+        </div>
+    </div>
+</body>
+</html>
+
+<script src="main.js"></script>
