@@ -102,7 +102,7 @@ p{
 }
 
 #projects{
-    margin-top: 690px;
+    margin-top: 0px;
 }
 
 #contact{
@@ -112,10 +112,6 @@ p{
 .certification{
     margin-bottom: 0;
     margin-top: 0;
-}
-
-.skills{
-margin-bottom: 20px;
 }
 
 #tools{
@@ -251,7 +247,7 @@ img{
 
 @media screen and (1471px <= width <= 1961px){
     #projects{
-        margin-top: 1000px;
+        margin-top: 700px;
     }
 }
 
