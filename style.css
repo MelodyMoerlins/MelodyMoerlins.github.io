@@ -1,6 +1,6 @@
 body{
     background-color: rgb(250, 217, 229);
-    margin: 5%;
+    /* margin: 5%; */
 }
 
 header{
@@ -27,11 +27,13 @@ a{
 article{
     background-color: rgb(255, 180, 205);
     width: 220px;
+    height: 95%;
     padding: 15px;
     /* height: 100px; */
-    margin-inline: 5%;
+    /* margin-inline: 5%; */
     float: left;
     position: fixed;
+    margin: 0px;
 }
 
 #image{
