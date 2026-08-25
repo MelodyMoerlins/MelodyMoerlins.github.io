@@ -1,267 +1,205 @@
-body{
-    background-color: rgb(250, 217, 229);
-    /* margin: 5%; */
-}
-
-header{
-    color: rgb(228, 228, 228);
-    background-color: rgb(68, 68, 68);
-    padding: 10px;
-    text-align: center;
-}
-
-a{
-    display: block;
-    color: rgb(22, 22, 22);
-    /* width: 100px; */
-    background-color: transparent;
-    border: none;
-    font-weight: bold;
-    font-size: 17.5px;
-    cursor: pointer;
-    margin-bottom: 20px;
-    margin-top: 20px;
-    text-decoration: none;
-}
-
-article{
-    background-color: rgb(255, 180, 205);
-    width: 220px;
-    height: 95%;
-    padding: 15px;
-    /* height: 100px; */
-    /* margin-inline: 5%; */
-    float: left;
-    position: fixed;
-    margin: 0px;
-}
-
-#image{
-    border-radius: 100px;
-    width: 175px;
-    border: 1px solid black;
-}
-
-h1{
-    font-size: 30px;
-    padding-bottom: 0px;
-    margin-bottom: 0px;
-}
-
-h2{
-    font-size: 18px;
-    padding-top: 0px;
-    /* margin-top: 8px; */
-    margin-left: 50px;
-    margin-bottom: 0px;
-}
-
-#name{
-    margin: 0;
-    font-size: 30px;
-}
-
+/* GENERAL */
+*{box-sizing: border-box;
+font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+background-color: rgb(199, 199, 199);
+/* cursor: url('/Webpage/swords.png'), auto; */}
+.cursorhover{cursor: pointer;}
+body{margin: 0;
+    padding: 0px;}
 p{
-    font-size: 20px;
-    margin-top: 0px;
-}
-
-#name_title{
-    margin: 0px;
-}
-
-#location{
-    margin: 0px;
-    margin-top: 14px;
-    font-size: 17px;
-}
-
-.subheading{
-    font-weight: bold;
-    margin-left: 30px;
-    font-size: 25px;
-}
-
-
-#education_div{
-    float: left;
-    padding: 0px;
     margin: 0;
-    width: 50%;
-}
+    padding: 0;
+    background-color:transparent;}
+h1{
+    text-align: center;
+    -webkit-text-stroke: rgb(68, 68, 68) 1px;
+    color: whitesmoke;}
+.section{
+    padding-bottom: 50px;
+    text-align: center;}
+a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;}
 
-#certification_div{
-    float: right;
-    padding: 0px;
-    margin: 0px;
-    width: 40%;
-    margin-top: 30px;
-    margin-left: 10px;
-}
-
-.left{
-    margin-left: 400px;
-}
-
-#projects{
-    margin-top: 0px;
-}
-
-#contact{
-    margin-top: 500px;
-}
-
-.certification{
-    margin-bottom: 0;
-    margin-top: 0;
-}
-
-#tools{
+    /* HEADING */
+#smiley{
+    box-sizing: content-box;
+    border-radius: 9px;
+    border: black solid 1px;
+    padding: 10px;
+    width: 55px;
+    font-size: 50px;
+    text-align: center;
+    height: 55px;
+    padding-top: 2px;
+    padding-bottom: 17px;
+    margin-bottom: 0px;
+    background-color: rgb(0, 0, 0);
+    color: aliceblue;
+    cursor: pointer;
+    /* cursor: url('/Webpage/image.png'), pointer; */
     float: left;
-    margin-top: 0;
-}
+    margin: 35px;
+    margin-bottom: 10px;}
+header{
+    box-sizing: content-box;
+    height: 175px;
+    width: 100%;
+    margin: 0px;
+    border: 1px black solid;
+    background-color: rgb(220, 195, 252);}
+#fancyname{
+    font-family:serif;
+    font-size: 75px;
+    text-align: center;
+    padding-right: 15px;
+    margin-top: 21px;
+    color: white;
+    -webkit-text-stroke: rgb(68, 68, 68) 1px;
+    font-size: clamp(3rem, 8vw, 6rem);}
 
-#other{
-    float: right;
-    margin-top: 0;
-    font-size: 20px; 
-    margin-top: 0px;
-}
-
-img{
-    border-radius: 50px;
-    width: 350px;
-    /* border: black solid 2px; */
-    margin-top: 0px;
-    padding-top: 0px;
-}
-
-.project{
-    float: inline-start;
-    width: 350px;
-    margin-inline: 20px;
-    height: 430px;
-    border: black solid;
-    border-radius: 54px;
-}
-
-#about{
-    margin-top: 0px;
-}
-
-#newarticle{
-    display: none;
-}
-.top{
+/* NAVBAR */
+    nav{
+    margin: 0px;
+    padding: 0px;
+    gap: 0px;
+    display: flex; 
+    height: auto;
+    width: 100%;   
+    position:sticky;
+    box-shadow: 0 10px 10px -5px rgb(31, 31, 31);
+    top: 0;
+    z-index: 2;}
+nav button{
+    width: 25%;
+    margin: 0px;
+    padding: 0px;
+    height: 25px;
     display: inline;
-    margin-inline: 5%;
+    border-radius: 0;
+    border: black 1px solid;
+    cursor: pointer;
+    background-color: rgb(199, 150, 255);}
+#tagline{
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    /* margin-inline: 10px; */
+    -webkit-text-stroke: rgb(68, 68, 68) 1px;
+        font-size:clamp(1rem, 2vw, 1.5rem);;}
+
+/* QUOTE */
+#quote{
+    text-align: center;
+    margin-top: 50px;
+    margin-inline: 25px;
+    font-size: 25px;
+    font-family: Courier, monospace;}
+
+/* PROJECTS */
+.divider-title {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 1rem; 
+  /* Glowing Aura Effect */
+  filter: drop-shadow(0 0 5px #313131); 
+  color: #fff; /* White text looks great with a colored glow */}
+.divider-title::before,
+.divider-title::after {
+  content: "";
+  flex: 1;
+  border-bottom: 2px solid #ffffff;}
+.project{
+    margin: 20px;
+    width: calc(33.330vw - 49px);
+    height: 280px;
+    border: black solid 1px;
+    border-radius: 15px;
+    display: inline-block;
+    background-color: rgb(214, 199, 233);
+    vertical-align: top;
+    padding: 15px;}
+.more{
+    float: right;
+    margin: 20px;
+    width: 15%;
+    height: 30px;
+    border: black 1px solid;
+    border-radius: 15px;
+    background-color: #816ad4;
+    color: white;
+    padding: 5px;
+    padding-left: 15px;}
+img{width: 100%;
+    height: 50%;
+    border: black 2px solid;
+    object-fit: cover;
+    border-radius: 2px;}
+.projectclass{
+    text-align: center;    
+    background-color: transparent;
+    padding: none;
+    margin: none;
+    line-height: 1;}
+
+/* TIMELINE */
+#timelineblock{
+    width: 95%;
+    margin-left: 2.5%;
+    height: 300px;
+    border: black solid 1px;
+    border-radius: 1px;
+    background-color: rgb(214, 199, 233);
+    text-align: left;
+    padding: 20px;}
+#timelinetextbox{
+    background-color: transparent;
+    width: fit-content;
+    max-width: 90%; 
+    margin: 0 auto; 
+    text-align: left;
+}
+b{background-color: transparent;
+    padding-inline: 30px;}
+.timeline{margin-top: 33px;}
+
+/* SKILLS */
+.skillbox{
+    vertical-align: top;
+    width: 40%;
+    display: inline-block;
+    box-sizing: border-box;
+    margin-inline: 4.8%;
+    background-color: rgb(214, 199, 233);
+    border: black 1px solid;
+    text-align: center;}
+.skillbox h2{background-color: transparent;}
+li::marker {content: "❤︎⁠";}
+ul{background-color: transparent;}
+li{background-color: transparent;
+text-align: left;
+padding-left: 25px;
+padding-bottom: 3px;}
+.applications li{
+    margin-bottom: 18px;}
+.skilltextbox{
+    background-color: transparent;
+    width: fit-content;
+    max-width: 90%;
+    margin: 0 auto;
+    text-align: left;
 }
 
-@media screen and (max-width:1660px) {
-    .skills{
-        display: block;
-        width: 250px;
-        float: none;
-    }
-    #tools{
-        display: block;
-    }
-    #projects{
-        display: block;
-        /* margin-top: 800px; */
-    }
-    /* #certification_div{
-        float: none;
-    } */
-    #tools{
-        float: none;
-    }
-    #other{
-        float: none;
-    }
-    
-}
-
-@media screen and (max-width:1470px) {
-    body{
-        margin: 0px;
-    }
-    .left{
-        margin-left: 0px;
-        margin-inline:70px
-    }
-    #about{
-        margin-top: 70px;
-    }
-    article{
-        display: none;
-    }
-
-    #newarticle{
-        display: block;
-        position: fixed;
-        background-color: rgb(255, 180, 205);
-        width: 100%;
-        height: 130px;
-        margin: 0px;
-        padding: 15px;
-    }
-    #certification_div{
-        margin-top: 230px;
-        float: none;
-        width: 100%;
-    }
-    #education_div{
-        float: none;
-        display: block;
-        width: 100%;
-    }
-    #tools{
-        float: left;
-    }
-    #other{
-        float: left;
-        margin-inline: 50px;
-    }
-    #projects{
-        margin-top: 50px;
-    }
-    .project{
-        margin: 10px;
-    }
-
-}
-
-@media screen and (max-width:855px) {
-    #contact{
-        margin-top: 900px;
-    }
-    .project{
-        margin-inline: 13%;
-    }
-}
-
-@media screen and (max-width:1923px){
-    #other{
-        margin-bottom: 0px;
-    }
-}
-
-@media screen and (1471px <= width <= 1961px){
-    #projects{
-        margin-top: 700px;
-    }
-}
-
-@media screen and (max-width:585px) {
-    #certification_div{
-        margin-top: 70px;
-    }
-    #other{
-        float: none;
-        margin-inline: 0px;
-    }
-    #tools{
-        float: none;
-    }
-}
+/* SCALING */
+@media screen and (max-width:470px) {
+     header{
+        height: 175px;
+     }}
+#contactdiv{
+    padding-inline: 15%;
+    padding-top: 30px;
+    padding-bottom: 30px;}
+#contactdiv p{
+    display: inline;
+    padding-right: 30px}
