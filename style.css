@@ -271,4 +271,6 @@ hr{
 
 nav button{
     color: black;
+    -webkit-appearance: none;
+    appearance: none;
 }
