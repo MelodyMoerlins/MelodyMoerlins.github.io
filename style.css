@@ -118,6 +118,7 @@ nav button{
 .project{
     margin: 10px;
     width: calc(33.330vw - 50px);
+    max-width: 300px;
     height: 280px;
     border: black solid 1px;
     border-radius: 15px;
@@ -143,6 +144,7 @@ nav button{
     min-width: 160px;
 }
 img{width: 100%;
+    max-width: 250px;
     height: 50%;
     border: black 2px solid;
     object-fit: cover;
@@ -157,13 +159,15 @@ img{width: 100%;
 /* TIMELINE */
 #timelineblock{
     width: 95%;
-    margin-left: 2.5%;
+    max-width: 900px;
     height: auto;
     min-height: 300px;
     border: black solid 1px;
     border-radius: 1px;
     background-color: rgb(214, 199, 233);
     text-align: left;
+    margin: 0 auto;
+    justify-content: center;
     padding: 20px;}
 #timelinetextbox{
     background-color: transparent;
@@ -181,6 +185,7 @@ b{background-color: transparent;
     vertical-align: top;
     height: 300px;
     width: 40%;
+    max-width: 380px;
     min-width: 200px;
     display: inline-block;
     box-sizing: border-box;
@@ -196,9 +201,15 @@ b{background-color: transparent;
     #skillstoolkitbox{
         display: flex;
         justify-content: center;
+        margin: auto 0;
+        text-align: center;
     }
 }
-
+#skillstoolkitbox{
+    justify-content: center;
+    margin:auto 0;
+    text-align: center;
+}
 .skillbox h2{background-color: transparent;}
 li::marker {content: "❤︎⁠";}
 ul{background-color: transparent;}
@@ -266,5 +277,17 @@ hr{
         width: auto;
         margin: 5px;
         padding: 0px;
+    }
+}
+
+nav button{
+    color: black;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+@media (min-width: 650px) {
+    #projectsscroll {
+        justify-content: center;
     }
 }

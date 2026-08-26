@@ -14,3 +14,4 @@ function scrollToId(x) {
     console.warn(`Element with ID "${x}" was not found.`);
   }
 }
+
