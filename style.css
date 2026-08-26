@@ -97,6 +97,11 @@ nav button{
     font-family: Courier, monospace;}
 
 /* PROJECTS */
+#projectsscroll{
+    overflow-y: hidden;
+    height: 350px;
+    display: flex;
+}
 .divider-title {
   display: flex;
   align-items: center;
@@ -111,26 +116,32 @@ nav button{
   flex: 1;
   border-bottom: 2px solid #ffffff;}
 .project{
-    margin: 20px;
-    width: calc(33.330vw - 49px);
+    margin: 10px;
+    width: calc(33.330vw - 50px);
     height: 280px;
     border: black solid 1px;
     border-radius: 15px;
     display: inline-block;
     background-color: rgb(214, 199, 233);
     vertical-align: top;
-    padding: 15px;}
+    padding: 10px;
+    min-width: 200px;}
 .more{
     float: right;
     margin: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
     width: 15%;
+    text-align: center;
     height: 30px;
     border: black 1px solid;
     border-radius: 15px;
     background-color: #816ad4;
     color: white;
     padding: 5px;
-    padding-left: 15px;}
+    padding-left: 15px;
+    min-width: 160px;
+}
 img{width: 100%;
     height: 50%;
     border: black 2px solid;
@@ -147,7 +158,8 @@ img{width: 100%;
 #timelineblock{
     width: 95%;
     margin-left: 2.5%;
-    height: 300px;
+    height: auto;
+    min-height: 300px;
     border: black solid 1px;
     border-radius: 1px;
     background-color: rgb(214, 199, 233);
@@ -167,13 +179,26 @@ b{background-color: transparent;
 /* SKILLS */
 .skillbox{
     vertical-align: top;
+    height: 300px;
     width: 40%;
+    min-width: 200px;
     display: inline-block;
     box-sizing: border-box;
     margin-inline: 4.8%;
     background-color: rgb(214, 199, 233);
     border: black 1px solid;
     text-align: center;}
+@media  screen and (max-width:500px) {
+    .skillbox{
+        width: 80%;
+        margin: 20px;
+    }
+    #skillstoolkitbox{
+        display: flex;
+        justify-content: center;
+    }
+}
+
 .skillbox h2{background-color: transparent;}
 li::marker {content: "❤︎⁠";}
 ul{background-color: transparent;}
@@ -203,3 +228,43 @@ padding-bottom: 3px;}
 #contactdiv p{
     display: inline;
     padding-right: 30px}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+hr{
+    border: none;
+    border-top: black 1px solid;
+}
+
+.small-screen-break {
+  display: none;
+}
+.smaller-screen-break{
+    display: none;
+}
+
+@media (max-width: 698px) {
+  .small-screen-break {
+    display: inline;
+  }
+  .skillbox{
+    width: 90%;
+    display: block;
+  }
+  #skillstoolkitbox{
+    display: block;
+  }
+}
+
+@media(max-width:490px){
+    .smaller-screen-break{
+        display:inline
+    }
+    #contactdiv p{
+        width: auto;
+        margin: 5px;
+        padding: 0px;
+    }
+}
