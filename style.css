@@ -268,3 +268,7 @@ hr{
         padding: 0px;
     }
 }
+
+nav button{
+    color: black;
+}
